@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Nikolaas Steenbergen</title>
+  <meta name="description" content="Nikolaas Steenbergen — Staff AI Engineer & Consultant specializing in computer vision, LLM agents, and open source.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .bio-page {
+      padding-top: 100px;
+      max-width: 800px;
+    }
+
+    .bio-page h1 {
+      font-family: var(--font-mono);
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .bio-page .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .bio-page h2 {
+      font-family: var(--font-mono);
+      font-size: 1.3rem;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      color: var(--accent);
+    }
+
+    .bio-page p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .timeline {
+      list-style: none;
+      border-left: 2px solid var(--border);
+      padding-left: 2rem;
+    }
+
+    .timeline li {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+
+    .timeline li::before {
+      content: '';
+      position: absolute;
+      left: -2.35rem;
+      top: 0.4rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .timeline .date {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+
+    .timeline .role {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .timeline .company {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline .desc {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .skill-group h3 {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .skill-group .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .skill-group .chip {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      padding: 0.3rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      color: var(--text-muted);
+    }
+
+    .oss-list {
+      list-style: none;
+    }
+
+    .oss-list li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .oss-list li:last-child {
+      border-bottom: none;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .bio-page h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo"><span>&gt;</span> klaus_kode</a>
+      <ul>
+        <li><a href="index.html#how-it-works">How it works</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://github.com/nikste/klaus_kode">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="bio-page">
+    <h1>Nikolaas Steenbergen</h1>
+    <div class="subtitle">Staff AI Engineer & Consultant | Vision, LiDAR & Language Systems</div>
+
+    <p>AI consultant with over 10 years of experience specializing in production-ready computer vision and Large Language Model solutions. Proven track record of architecting and deploying automated data analysis pipelines for clients in civil engineering, autonomous vehicles, infrastructure and mapping.</p>
+
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li>
+        <div class="date">2026 &mdash; Present</div>
+        <div class="role">Senior/Staff AI Engineer - Consultant</div>
+        <div class="company">Deep Safety GmbH</div>
+        <div class="desc">Developing novel algorithms for uncertainty estimation for monocular depth estimation networks. Supporting smart camera software delivery for a US-based humanoid robotics company.</div>
+      </li>
+      <li>
+        <div class="date">2024 &mdash; 2025</div>
+        <div class="role">Lead AI Engineer - Consultant</div>
+        <div class="company">Reiner AI</div>
+        <div class="desc">Architecting an agentic RAG platform using (V)LLMs to provide intelligent support for civil engineering firms.</div>
+      </li>
+      <li>
+        <div class="date">2024 &mdash; Present</div>
+        <div class="role">Founder</div>
+        <div class="company">LynxLabs.ai</div>
+        <div class="desc">Architected and deployed a computer vision pipeline for processing aerial image and LiDAR data.</div>
+      </li>
+      <li>
+        <div class="date">2021 &mdash; 2024</div>
+        <div class="role">Cofounder</div>
+        <div class="company">030Solutions GmbH</div>
+        <div class="desc">Co-founded a deep-tech venture engineering a fully automated geospatial analysis pipeline for infrastructure mapping. Secured six-figure enterprise contracts for broadband expansion mapping.</div>
+      </li>
+      <li>
+        <div class="date">2019 &mdash; 2021</div>
+        <div class="role">Senior Software Engineer &amp; Delivery Manager</div>
+        <div class="company">TomTom</div>
+        <div class="desc">Architecture and implementation of automatic analysis software for image and LiDAR data, creating maps for autonomous vehicles through ML and computer vision.</div>
+      </li>
+      <li>
+        <div class="date">2016 &mdash; 2019</div>
+        <div class="role">Software Engineer - Deep Learning</div>
+        <div class="company">Autonomos / TomTom</div>
+        <div class="desc">Developed software for autonomous vehicles (C++, ROS), computer vision, and machine learning. Built a deep learning team from the ground up.</div>
+      </li>
+      <li>
+        <div class="date">2015 &mdash; 2016</div>
+        <div class="role">Researcher</div>
+        <div class="company">DFKI - Intelligent Analysis of Massive Data</div>
+        <div class="desc">Research and development for distributed systems and machine learning, contributing to Apache Flink.</div>
+      </li>
+    </ul>
+
+    <h2>Education</h2>
+    <ul class="timeline">
+      <li>
+        <div class="date">2012 &mdash; 2014</div>
+        <div class="role">M.Sc. Artificial Intelligence</div>
+        <div class="company">University of Amsterdam</div>
+      </li>
+      <li>
+        <div class="date">2009 &mdash; 2011</div>
+        <div class="role">B.Sc. Digital Media</div>
+        <div class="company">University of Bremen</div>
+      </li>
+    </ul>
+
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>AI / ML</h3>
+        <div class="chips">
+          <span class="chip">Deep Learning</span>
+          <span class="chip">Computer Vision</span>
+          <span class="chip">LLM Agents</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">TensorFlow</span>
+          <span class="chip">OpenCV</span>
+          <span class="chip">Open3D</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Data Processing</h3>
+        <div class="chips">
+          <span class="chip">Point Clouds</span>
+          <span class="chip">Images</span>
+          <span class="chip">Apache Flink</span>
+          <span class="chip">ROS</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">C++</span>
+          <span class="chip">Java</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Infrastructure</h3>
+        <div class="chips">
+          <span class="chip">AWS</span>
+          <span class="chip">Docker</span>
+          <span class="chip">Kubernetes</span>
+          <span class="chip">Git</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>Open Source</h2>
+    <ul class="oss-list">
+      <li>Contributor to <a href="https://github.com/tensorflow/tensorflow">Google TensorFlow</a> (Python, C++)</li>
+      <li>Contributor to <a href="https://github.com/apache/flink">Apache Flink</a> (Java)</li>
+      <li>Contributor to <a href="https://github.com/isl-org/Open3D">Open3D</a> (C++, Python)</li>
+      <li>Creator of <a href="https://github.com/nikste/pptk-revived">pptk-revived</a> — point cloud visualization toolkit</li>
+      <li>Creator of <a href="https://github.com/nikste/klaus_kode">Klaus Kode</a> — AI agent for open source contributions</li>
+    </ul>
+
+    <h2>Highlights</h2>
+    <ul class="oss-list">
+      <li>3rd place at the Iranian Open, Tehran &mdash; RoboCup standard league platform with the Dutch Nao team (Autonomous Robot Soccer)</li>
+    </ul>
+
+    <div class="contact-links">
+      <a href="https://github.com/nikste" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <a href="mailto:Nikolaas.Steenbergen@gmail.com" class="btn btn-secondary">Email</a>
+      <a href="index.html" class="btn btn-secondary">&larr; Back to Klaus Kode</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/nikste">GitHub</a>
+      <a href="https://github.com/nikste/klaus_kode">Source</a>
+      <a href="index.html">Home</a>
+      <a href="mailto:Nikolaas.Steenbergen@gmail.com">Contact</a>
+    </div>
+    <p>&copy; 2026 Nikolaas Steenbergen</p>
+  </footer>
+
+</body>
+</html>
